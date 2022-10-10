@@ -146,14 +146,34 @@ public class App {
         }
         return iCheckSum;
     }
+
     public static void main(String[] args) {
-        // test your method implementations here
-        // make method calls
-        // print their results
-        // etc.
-        //oneMonthCalendar(31, 3);
-        //long[] lRandomNumbers = lcg(0);
-        //guessingGame(randomNumberBetweenOneAndHundred());
-        //System.out.println(camelCase("My Name Isnt Alice"));
+        System.out.println("OneMonthCalender");
+        oneMonthCalendar(31, 3);
+
+        System.out.println("lcg");
+        long[] lRandomNumbers = lcg(0);
+        for (long lTemp:lRandomNumbers) {
+            System.out.println(lTemp);
+        }
+
+        System.out.println("guessingGame");
+        guessingGame(randomNumberBetweenOneAndHundred());
+
+        System.out.println("swapArray");
+        int[] a = {1, 2, 3, 4};
+        int[] b = {9, 8, 7, 6};
+        int[] c = {1, 2, 3};
+        System.out.println(swapArrays(a, b));
+        System.out.println(swapArrays(a, c));
+
+        System.out.println("CamelCase");
+        System.out.println(camelCase("Lisa Is MY namE"));
+
+        System.out.println("checkDigit");
+        System.out.println(checkDigit(a));
+
+
+
     }
 }
